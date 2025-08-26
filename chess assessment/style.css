@@ -1,24 +1,23 @@
-/* Import elegant fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap');
 
 .header-container {
   display: inline-flex;
   align-items: flex-start;
-  justify-content: center; /* Center logo + text as a group */
-  gap: 1px; /* Space between logo and text */
+  justify-content: center; 
+  gap: 15px;
 }
 
 .logo {
-  height: 60px; /* Adjust size */
+  height: 60px;
   width: auto;
-  border-radius: 8px; /* Optional: make it rounded */
+  border-radius: 8px; 
 }
 
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
-  background: #fdf6e3; /* light beige for a classic chessboard feel */
+  background: #fdf6e3; 
   color: #333;
   line-height: 1.6;
 }
