@@ -1,0 +1,164 @@
+/* Import elegant fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+.header-container {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: center; /* Center logo + text as a group */
+  gap: 1px; /* Space between logo and text */
+}
+
+.logo {
+  height: 60px; /* Adjust size */
+  width: auto;
+  border-radius: 8px; /* Optional: make it rounded */
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fdf6e3; /* light beige for a classic chessboard feel */
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #222, #444);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  border-bottom: 4px solid orange;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  padding: 8px 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background: orange;
+}
+
+main {
+  max-width: 900px;
+  width: 90%;
+  margin: 30px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #222;
+  border-left: 6px solid orange;
+  padding-left: 10px;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #f7f7f7;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  font-size: 1.05rem;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+form {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+form input {
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+}
+
+form button {
+  margin-top: 18px;
+  padding: 12px;
+  background: #4CAF50;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: orange;
+}
+
+img {
+  border-radius: 12px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 8px auto;
+    width: fit-content;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    padding: 15px;
+  }
+}
